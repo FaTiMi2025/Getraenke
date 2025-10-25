@@ -13,7 +13,7 @@ export const drinks = [
   { id: 12, name: "Talisker 10 Jahre", alcohol: 46, category: "Whisky" },
   { id: 13, name: "The Balvenie - Creation of a Classic", alcohol: 43, category: "Whisky" },
   { id: 14, name: "Wismarian", alcohol: 43, category: "Whisky" },
-  { id: 15, name: "Aultmore 12 Jahre", alcohol: 46, category: "Gin" },
+  { id: 15, name: "Aultmore 12 Jahre", alcohol: 46, category: "Whisky" },
   { id: 16, name: "Bln Gin", alcohol: 45, category: "Gin" },
   { id: 17, name: "Heimat", alcohol: 43, category: "Gin" },
   { id: 18, name: "Norden", alcohol: 44, category: "Gin" },
