@@ -5,11 +5,11 @@ function Confetti({ trigger }) {
   const [confettiPieces, setConfettiPieces] = useState([]);
 
   useEffect(() => {
-    if (trigger) {
+    if (trigger > 0) {
       const pieces = [];
       for (let i = 0; i < 50; i++) {
         pieces.push({
-          id: i,
+          id: `${trigger}-${i}`,
           left: Math.random() * 100,
           animationDelay: Math.random() * 3,
           backgroundColor: getRandomColor()
