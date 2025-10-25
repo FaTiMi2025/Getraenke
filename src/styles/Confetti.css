@@ -1,0 +1,49 @@
+.confetti-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.confetti-piece {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: -10px;
+  opacity: 0;
+  animation: confetti-fall 4s ease-in forwards;
+}
+
+@keyframes confetti-fall {
+  0% {
+    opacity: 1;
+    top: -10px;
+    transform: translateX(0) rotateZ(0deg);
+  }
+  100% {
+    opacity: 0;
+    top: 100vh;
+    transform: translateX(100px) rotateZ(720deg);
+  }
+}
+
+.confetti-piece:nth-child(2n) {
+  animation: confetti-fall-alt 4s ease-in forwards;
+}
+
+@keyframes confetti-fall-alt {
+  0% {
+    opacity: 1;
+    top: -10px;
+    transform: translateX(0) rotateZ(0deg);
+  }
+  100% {
+    opacity: 0;
+    top: 100vh;
+    transform: translateX(-100px) rotateZ(-720deg);
+  }
+}

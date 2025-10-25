@@ -1,11 +1,18 @@
 import React, { useState } from 'react';
 import CategorySection from './components/CategorySection';
-import { drinks, categories } from './data/drinks';
+import Confetti from './components/Confetti';
+import { drinks, categories, categoryEmojis } from './data/drinks';
 import './App.css';
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState('Alle');
   const [searchTerm, setSearchTerm] = useState('');
+  const [showConfetti, setShowConfetti] = useState(false);
+
+  const handleCheers = () => {
+    setShowConfetti(true);
+    setTimeout(() => setShowConfetti(false), 100);
+  };
 
   const filteredDrinks = drinks.filter(drink => {
     const matchesCategory = selectedCategory === 'Alle' || drink.category === selectedCategory;
@@ -22,8 +29,23 @@ function App() {
 
   return (
     <div className="app">
+      <Confetti trigger={showConfetti} />
       <header className="app-header">
-        <h1>Digitale Getränkekarte</h1>
+        <div className="party-decorations">
+          <span className="balloon">🎈</span>
+          <span className="balloon">🎉</span>
+          <span className="balloon">🎊</span>
+        </div>
+        <h1>🎂 Geburtstagsparty Getränkekarte 🥳</h1>
+        <p className="party-subtitle">Prost auf einen unvergesslichen Abend!</p>
+        <button className="cheers-button" onClick={handleCheers}>
+          🍻 Prost! 🥂
+        </button>
+        <div className="party-decorations">
+          <span className="balloon">🎊</span>
+          <span className="balloon">🎉</span>
+          <span className="balloon">🎈</span>
+        </div>
       </header>
 
       <div className="controls">
@@ -50,7 +72,7 @@ function App() {
               className={selectedCategory === category ? 'filter-btn active' : 'filter-btn'}
               onClick={() => setSelectedCategory(category)}
             >
-              {category}
+              {categoryEmojis[category]} {category}
             </button>
           ))}
         </div>
