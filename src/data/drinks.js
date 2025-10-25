@@ -61,3 +61,13 @@ export const categories = [
   "Brandy / Cognac",
   "Verschiedenes"
 ];
+
+export const categoryEmojis = {
+  "Whisky": "🥃",
+  "Gin": "🍸",
+  "Obstler": "🍎",
+  "Grappa": "🍇",
+  "Rum": "🍹",
+  "Brandy / Cognac": "🥂",
+  "Verschiedenes": "🍾"
+};
