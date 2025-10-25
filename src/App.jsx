@@ -7,11 +7,10 @@ import './App.css';
 function App() {
   const [selectedCategory, setSelectedCategory] = useState('Alle');
   const [searchTerm, setSearchTerm] = useState('');
-  const [showConfetti, setShowConfetti] = useState(false);
+  const [confettiTrigger, setConfettiTrigger] = useState(0);
 
   const handleCheers = () => {
-    setShowConfetti(true);
-    setTimeout(() => setShowConfetti(false), 100);
+    setConfettiTrigger(prev => prev + 1);
   };
 
   const filteredDrinks = drinks.filter(drink => {
@@ -29,7 +28,7 @@ function App() {
 
   return (
     <div className="app">
-      <Confetti trigger={showConfetti} />
+      <Confetti trigger={confettiTrigger} />
       <header className="app-header">
         <div className="party-decorations">
           <span className="balloon">🎈</span>
