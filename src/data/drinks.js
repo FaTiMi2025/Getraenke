@@ -52,13 +52,13 @@ export const drinks = [
   { id: 51, name: "Wodka Pan Tadeusz", alcohol: 40, category: "Verschiedenes" },
   { id: 52, name: "Brombeerlikör Heiner Schiefer", alcohol: 17, category: "Verschiedenes" },
   { id: 53, name: "Johannisbeerlikör Heiner Schiefer", alcohol: 17, category: "Verschiedenes" },
-  { id: 54, name: "Cola", alcohol: null, category: "Ohne Alkohol" },
-  { id: 55, name: "Fanta", alcohol: null, category: "Ohne Alkohol" },
-  { id: 56, name: "Bitter Lemon", alcohol: null, category: "Ohne Alkohol" },
-  { id: 57, name: "Malzbier", alcohol: null, category: "Ohne Alkohol" },
-  { id: 58, name: "Sprudel", alcohol: null, category: "Ohne Alkohol" },
-  { id: 59, name: "Stilles Wasser", alcohol: null, category: "Ohne Alkohol" },
-  { id: 60, name: "Espresso", alcohol: null, category: "Ohne Alkohol" },
+  { id: 54, name: "Cola", alcohol: null, category: "Alkoholfrei" },
+  { id: 55, name: "Fanta", alcohol: null, category: "Alkoholfrei" },
+  { id: 56, name: "Bitter Lemon", alcohol: null, category: "Alkoholfrei" },
+  { id: 57, name: "Malzbier", alcohol: null, category: "Alkoholfrei" },
+  { id: 58, name: "Sprudel", alcohol: null, category: "Alkoholfrei" },
+  { id: 59, name: "Stilles Wasser", alcohol: null, category: "Alkoholfrei" },
+  { id: 60, name: "Espresso", alcohol: null, category: "Alkoholfrei" },
   { id: 61, name: "Alpiersbacher Klosterbräu", alcohol: null, category: "Bier" },
   { id: 62, name: "Glühwein rot", alcohol: 10, category: "Wein" },
   { id: 63, name: "WG Lauffen - Sauvignon Blanc", alcohol: 12, category: "Wein" },
@@ -70,16 +70,16 @@ export const drinks = [
 ];
 
 export const categories = [
+  "Alkoholfrei",
   "Whisky",
   "Gin",
   "Obstler",
   "Grappa",
   "Rum",
   "Brandy / Cognac",
-  "Verschiedenes",
-  "Ohne Alkohol",
   "Bier",
-  "Wein"
+  "Wein",
+  "Verschiedenes"
 ];
 
 export const categoryEmojis = {
@@ -90,7 +90,7 @@ export const categoryEmojis = {
   "Rum": "🍹",
   "Brandy / Cognac": "🥂",
   "Verschiedenes": "🍾",
-  "Ohne Alkohol": "🥤",
+  "Alkoholfrei": "🥤",
   "Bier": "🍺",
   "Wein": "🍷"
 };
