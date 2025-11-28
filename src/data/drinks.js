@@ -13,7 +13,7 @@ export const drinks = [
   { id: 12, name: "Talisker 10 Jahre", alcohol: 46, category: "Whisky" },
   { id: 13, name: "The Balvenie - Creation of a Classic", alcohol: 43, category: "Whisky" },
   { id: 14, name: "Wismarian", alcohol: 43, category: "Whisky" },
-  { id: 15, name: "Aultmore 12 Jahre", alcohol: 46, category: "Whisky" },
+  { id: 15, name: "Aultmore 12 Jahre", alcohol: 46, category: "Gin" },
   { id: 16, name: "Bln Gin", alcohol: 45, category: "Gin" },
   { id: 17, name: "Heimat", alcohol: 43, category: "Gin" },
   { id: 18, name: "Norden", alcohol: 44, category: "Gin" },
@@ -49,7 +49,24 @@ export const drinks = [
   { id: 48, name: "Ramazzotti", alcohol: 30, category: "Verschiedenes" },
   { id: 49, name: "Ricard", alcohol: 45, category: "Verschiedenes" },
   { id: 50, name: "Sambuca", alcohol: 40, category: "Verschiedenes" },
-  { id: 51, name: "Wodka Pan Tadeusz", alcohol: 40, category: "Verschiedenes" }
+  { id: 51, name: "Wodka Pan Tadeusz", alcohol: 40, category: "Verschiedenes" },
+  { id: 52, name: "Brombeerlikör Heiner Schiefer", alcohol: 17, category: "Verschiedenes" },
+  { id: 53, name: "Johannisbeerlikör Heiner Schiefer", alcohol: 17, category: "Verschiedenes" },
+  { id: 54, name: "Cola", alcohol: null, category: "Ohne Alkohol" },
+  { id: 55, name: "Fanta", alcohol: null, category: "Ohne Alkohol" },
+  { id: 56, name: "Bitter Lemon", alcohol: null, category: "Ohne Alkohol" },
+  { id: 57, name: "Malzbier", alcohol: null, category: "Ohne Alkohol" },
+  { id: 58, name: "Sprudel", alcohol: null, category: "Ohne Alkohol" },
+  { id: 59, name: "Stilles Wasser", alcohol: null, category: "Ohne Alkohol" },
+  { id: 60, name: "Espresso", alcohol: null, category: "Ohne Alkohol" },
+  { id: 61, name: "Alpiersbacher Klosterbräu", alcohol: null, category: "Bier" },
+  { id: 62, name: "Glühwein rot", alcohol: 10, category: "Wein" },
+  { id: 63, name: "WG Lauffen - Sauvignon Blanc", alcohol: 12, category: "Wein" },
+  { id: 64, name: "WG Lauffen - Cuvee Cabernet", alcohol: 12.5, category: "Wein" },
+  { id: 65, name: "WG Lauffen - Lemberger im Eichenfass gereift", alcohol: 14, category: "Wein" },
+  { id: 66, name: "Hirschmüller - Merlot", alcohol: 13.5, category: "Wein" },
+  { id: 67, name: "Hirschmüller - Cuvee Cabernet", alcohol: 13.5, category: "Wein" },
+  { id: 68, name: "Hirschmüller - Auslese", alcohol: 10, category: "Wein" }
 ];
 
 export const categories = [
@@ -59,7 +76,10 @@ export const categories = [
   "Grappa",
   "Rum",
   "Brandy / Cognac",
-  "Verschiedenes"
+  "Verschiedenes",
+  "Ohne Alkohol",
+  "Bier",
+  "Wein"
 ];
 
 export const categoryEmojis = {
@@ -69,5 +89,8 @@ export const categoryEmojis = {
   "Grappa": "🍇",
   "Rum": "🍹",
   "Brandy / Cognac": "🥂",
-  "Verschiedenes": "🍾"
+  "Verschiedenes": "🍾",
+  "Ohne Alkohol": "🥤",
+  "Bier": "🍺",
+  "Wein": "🍷"
 };
