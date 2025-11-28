@@ -53,6 +53,7 @@ export const drinks = [
   { id: 52, name: "Brombeerlikör Heiner Schiefer", alcohol: 17, category: "Verschiedenes" },
   { id: 53, name: "Johannisbeerlikör Heiner Schiefer", alcohol: 17, category: "Verschiedenes" },
   { id: 54, name: "Cola", alcohol: null, category: "Alkoholfrei" },
+  { id: 69, name: "Cola Zero", alcohol: null, category: "Alkoholfrei" },
   { id: 55, name: "Fanta", alcohol: null, category: "Alkoholfrei" },
   { id: 56, name: "Bitter Lemon", alcohol: null, category: "Alkoholfrei" },
   { id: 57, name: "Malzbier", alcohol: null, category: "Alkoholfrei" },
