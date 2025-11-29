@@ -60,14 +60,14 @@ export const drinks = [
   { id: 58, name: "Sprudel", alcohol: null, category: "Alkoholfrei" },
   { id: 59, name: "Stilles Wasser", alcohol: null, category: "Alkoholfrei" },
   { id: 60, name: "Espresso", alcohol: null, category: "Alkoholfrei" },
-  { id: 61, name: "Alpiersbacher Klosterbräu", alcohol: null, category: "Bier" },
+  { id: 61, name: "Palmbräu Export", alcohol: null, category: "Bier" },
   { id: 62, name: "Glühwein rot", alcohol: 10, category: "Wein" },
   { id: 63, name: "WG Lauffen - Sauvignon Blanc", alcohol: 12, category: "Wein" },
   { id: 64, name: "WG Lauffen - Cuvee Cabernet", alcohol: 12.5, category: "Wein" },
   { id: 65, name: "WG Lauffen - Lemberger im Eichenfass gereift", alcohol: 14, category: "Wein" },
   { id: 66, name: "Hirschmüller - Merlot", alcohol: 13.5, category: "Wein" },
   { id: 67, name: "Hirschmüller - Cuvee Cabernet", alcohol: 13.5, category: "Wein" },
-  { id: 68, name: "Hirschmüller - Auslese", alcohol: 10, category: "Wein" }
+  { id: 68, name: "Hirschmüller - Auslese", alcohol: 10, category: "Wein" },
 ];
 
 export const categories = [
